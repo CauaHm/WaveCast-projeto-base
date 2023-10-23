@@ -1,0 +1,47 @@
+
+
+.secao {
+    display: grid;
+    align-items: end;
+    row-gap: 2rem;
+    margin: 1rem;
+    
+}
+
+.secao-horizontal {
+    grid-template-rows: 70px auto;
+}
+
+.secao-horizontal .secao__cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.25rem;
+    
+}
+
+.secao-vertical {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.secao-vertical .secao__cartoes {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.25rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.secao-vertical .secao__cartoes .cartao a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.secao-vertical .secao__cartoes .cartao__titulo {
+    flex-grow: 1;
+}
+
+
+

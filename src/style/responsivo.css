@@ -14,9 +14,17 @@
         padding-right: 1rem;
     }
 
+    .cabecalho {
+        justify-self: center;
+    }
+
     .navbar {
         display: block;
     }   
+
+    .secao-horizontal .cartao {
+        column-gap: .5rem;
+    }
 
     .secao-horizontal .cartao__imagem {
         height: 4.58rem;
@@ -24,6 +32,7 @@
  
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
+        align-self: center;
     }
 
     .secao-vertical .cartao {
@@ -43,6 +52,10 @@
     .cabecalho .cabecalho__logo,
     .cabecalho__botao__avancar {
         display: none;
+    }
+
+    .menu-lateral {
+        width: 208px;
     }
 
     .navbar {
@@ -74,5 +87,16 @@
     .cabecalho__logo {
         display: none;
     }
+    
+    .menu-lateral {
+    width: 228px;}
+    
+.secao-horizontal .secao__cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.25rem;
+    
+}
 
 }
